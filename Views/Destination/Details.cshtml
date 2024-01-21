@@ -1,0 +1,60 @@
+﻿@model TravelApp.Models.Destination
+
+@{
+    ViewBag.Title = "Podaci o putovanju";
+}
+
+<h2>Detalji</h2>
+
+<div>
+    <h4>Putovanje</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateGo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateGo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateBack)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateBack)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+
+
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Izmeni", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Nazad", "Index")
+</p>
